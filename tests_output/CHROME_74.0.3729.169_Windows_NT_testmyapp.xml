@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="testmyapp"
+    errors="0" failures="0" hostname="" id="" package="testmyapp" skipped="0"
+    tests="3" time="3.476" timestamp="">
+  
+    <testcase name="Demo test mylocalapp" classname="testmyapp" time="1.185" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="step two: Check route Private" classname="testmyapp" time="1.141" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="step three: Check route basement" classname="testmyapp" time="1.150" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
