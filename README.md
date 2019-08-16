@@ -20,3 +20,31 @@ Now the server is ready, run the app using node server.js and hit localhost:8080
 2. Now download the browser exe from selenium website along with seleniumstandaloneserver jar and put in a folder bin.
 3. Add nightwatch.json file to test the app , refer the project nightwatch.json.
 4. Add tests folder to project and add the testcases.js file and add the sample test cases.
+
+
+##################Page-objects-Model###########################
+To create page-objects in nightwatch we need to do following steps:
+1. First we need to create "page-objects" folder and create a file sections.js in it.
+2. Then edit Nightwatch.json and enter "page_objects_path": "[sections.js]"
+3. In sections.js under page-objects define,
+    module.exports= {
+        url: 'application URL',
+        elements:{
+        searchBar: {
+                selector: 'input[type=text]'
+                    },
+        submit: {
+                 selector: '//[@name="q"]',
+                 locateStrategy: 'xpath'
+            }
+        },
+        commands:{
+            selectFilter(selector, value){
+                const page = this;
+                page
+                    .click(slector)
+                    .click(value)
+                return this;
+                }
+        }   // end of commands
+    }
